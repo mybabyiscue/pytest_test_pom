@@ -1,0 +1,62 @@
+{
+  "2aba1a2878b48362cb0ebf9bb5d46047" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d700754f596f6029",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: type object 'Test_login' has no attribute 'init_driver'",
+      "time" : {
+        "start" : 1640855494342,
+        "stop" : 1640855494342,
+        "duration" : 0
+      }
+    } ]
+  },
+  "eec8a0761097f614c2521363acfa7114" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4caa3bad4d3165e3",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: type object 'Test_login' has no attribute 'init_driver'",
+      "time" : {
+        "start" : 1640855495690,
+        "stop" : 1640855495690,
+        "duration" : 0
+      }
+    } ]
+  },
+  "14e760be4f06a7b0d6c9df820cba28cb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e6406463ddf38f4",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: type object 'Test_login' has no attribute 'init_driver'",
+      "time" : {
+        "start" : 1640855495683,
+        "stop" : 1640855495683,
+        "duration" : 0
+      }
+    } ]
+  }
+}

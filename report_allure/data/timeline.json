@@ -1,0 +1,254 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "ENG-469-A",
+    "children" : [ {
+      "name" : "14864-MainThread",
+      "children" : [ {
+        "name" : "正确查询",
+        "uid" : "40dc9dc70dcc4793",
+        "parentUid" : "36fc6838e805f2349bd27a0a77d00188",
+        "status" : "failed",
+        "time" : {
+          "start" : 1640848467399,
+          "stop" : 1640848471732,
+          "duration" : 4333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录成功",
+        "uid" : "955c22c36c7ab6c2",
+        "parentUid" : "36fc6838e805f2349bd27a0a77d00188",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848463249,
+          "stop" : 1640848467382,
+          "duration" : 4133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "866d96b74b7eb31f",
+        "parentUid" : "36fc6838e805f2349bd27a0a77d00188",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848455335,
+          "stop" : 1640848463246,
+          "duration" : 7911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      } ],
+      "uid" : "36fc6838e805f2349bd27a0a77d00188"
+    }, {
+      "name" : "8404-MainThread",
+      "children" : [ {
+        "name" : "test_1login[loginlist0]",
+        "uid" : "d700754f596f6029",
+        "parentUid" : "e2425603442dc19585afe6e40c3b9fd5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640855494342,
+          "stop" : 1640855494342,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      }, {
+        "name" : "test_2search",
+        "uid" : "4caa3bad4d3165e3",
+        "parentUid" : "e2425603442dc19585afe6e40c3b9fd5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640855495690,
+          "stop" : 1640855495690,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_1login[loginlist1]",
+        "uid" : "5e6406463ddf38f4",
+        "parentUid" : "e2425603442dc19585afe6e40c3b9fd5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640855495683,
+          "stop" : 1640855495683,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      } ],
+      "uid" : "e2425603442dc19585afe6e40c3b9fd5"
+    }, {
+      "name" : "2832-MainThread",
+      "children" : [ {
+        "name" : "test_2search",
+        "uid" : "34de1ccde7c48637",
+        "parentUid" : "95aa6df3311c7f46c9cd5398f236a19e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640848000155,
+          "stop" : 1640848000155,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_1login[loginlist1]",
+        "uid" : "54402278c2cf45d0",
+        "parentUid" : "95aa6df3311c7f46c9cd5398f236a19e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640847999936,
+          "stop" : 1640847999936,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      }, {
+        "name" : "test_1login[loginlist0]",
+        "uid" : "8355e74c254ee8f3",
+        "parentUid" : "95aa6df3311c7f46c9cd5398f236a19e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640847998059,
+          "stop" : 1640847998059,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      } ],
+      "uid" : "95aa6df3311c7f46c9cd5398f236a19e"
+    }, {
+      "name" : "17124-MainThread",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "5e1e77ad9f919f88",
+        "parentUid" : "6e9628b8b55668e8d64a3350b113ceee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848598024,
+          "stop" : 1640848602211,
+          "duration" : 4187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      }, {
+        "name" : "正确查询",
+        "uid" : "5800311fa0064309",
+        "parentUid" : "6e9628b8b55668e8d64a3350b113ceee",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640848602215,
+          "stop" : 1640848602291,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "255f132e3a67ce62",
+        "parentUid" : "6e9628b8b55668e8d64a3350b113ceee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848590133,
+          "stop" : 1640848598020,
+          "duration" : 7887
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      } ],
+      "uid" : "6e9628b8b55668e8d64a3350b113ceee"
+    }, {
+      "name" : "13748-MainThread",
+      "children" : [ {
+        "name" : "test_2search",
+        "uid" : "de52f03abaf6162a",
+        "parentUid" : "6a1bdce8e364d3166db47ce624dd5e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640848417975,
+          "stop" : 1640848417975,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_1login[loginlist0]",
+        "uid" : "c18c80c88beeba42",
+        "parentUid" : "6a1bdce8e364d3166db47ce624dd5e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640848416080,
+          "stop" : 1640848416080,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      }, {
+        "name" : "test_1login[loginlist1]",
+        "uid" : "444e1e04d3e2ae5d",
+        "parentUid" : "6a1bdce8e364d3166db47ce624dd5e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640848417761,
+          "stop" : 1640848417761,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      } ],
+      "uid" : "6a1bdce8e364d3166db47ce624dd5e1a"
+    }, {
+      "name" : "12292-MainThread",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "d31eced50206b01a",
+        "parentUid" : "07f65c591839e86910f4d37fb326e027",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848176979,
+          "stop" : 1640848180873,
+          "duration" : 3894
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "2c25cb9561fff13b",
+        "parentUid" : "07f65c591839e86910f4d37fb326e027",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640848169370,
+          "stop" : 1640848176975,
+          "duration" : 7605
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'title': '登录失败', 'description': '登录失败的数据，用来测试用户名密码错误', 'username': 'xuzhu666', 'password': 12345}" ]
+      } ],
+      "uid" : "07f65c591839e86910f4d37fb326e027"
+    } ],
+    "uid" : "996e6c017b8a75ede3de36ece82eeedf"
+  } ]
+}

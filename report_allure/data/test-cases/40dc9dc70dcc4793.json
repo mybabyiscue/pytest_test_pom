@@ -1,0 +1,155 @@
+{
+  "uid" : "40dc9dc70dcc4793",
+  "name" : "正确查询",
+  "fullName" : "test_suit.test_login.Test_login#test_2search",
+  "historyId" : "eec8a0761097f614c2521363acfa7114",
+  "time" : {
+    "start" : 1640848467399,
+    "stop" : 1640848471732,
+    "duration" : 4333
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 1 == 2",
+  "statusTrace" : "self = <test_suit.test_login.Test_login object at 0x03F40590>\n\n    @allure.story('查询')\n    def test_2search(self):\n        allure.dynamic.title(\"正确查询\")\n        allure.description(\"这是一个正确的查询\")\n        # try:\n        self.lp.login_test2('手机')\n>       assert 1==2\nE       assert 1 == 2\n\n..\\test_suit\\test_login.py:50: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "init_driver",
+    "time" : {
+      "start" : 1640848452728,
+      "stop" : 1640848453935,
+      "duration" : 1207
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_Test_login",
+    "time" : {
+      "start" : 1640848453935,
+      "stop" : 1640848455332,
+      "duration" : 1397
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 1 == 2",
+    "statusTrace" : "self = <test_suit.test_login.Test_login object at 0x03F40590>\n\n    @allure.story('查询')\n    def test_2search(self):\n        allure.dynamic.title(\"正确查询\")\n        allure.description(\"这是一个正确的查询\")\n        # try:\n        self.lp.login_test2('手机')\n>       assert 1==2\nE       assert 1 == 2\n\n..\\test_suit\\test_login.py:50: AssertionError",
+    "steps" : [ {
+      "name" : "填写内容进行搜索",
+      "time" : {
+        "start" : 1640848467399,
+        "stop" : 1640848467451,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击查询",
+      "time" : {
+        "start" : 1640848467451,
+        "stop" : 1640848468730,
+        "duration" : 1279
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2d32d00942478d3d",
+      "name" : "运行结果截图",
+      "source" : "2d32d00942478d3d.png",
+      "type" : "image/png",
+      "size" : 5205
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_login::0",
+    "time" : {
+      "start" : 1640848471863,
+      "stop" : 1640848474009,
+      "duration" : 2146
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "电商项目Web自动化测试"
+  }, {
+    "name" : "story",
+    "value" : "查询"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "ENG-469-A"
+  }, {
+    "name" : "thread",
+    "value" : "14864-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_suit.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "40dc9dc70dcc4793.json",
+  "parameterValues" : [ ]
+}

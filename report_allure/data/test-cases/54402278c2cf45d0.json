@@ -1,0 +1,97 @@
+{
+  "uid" : "54402278c2cf45d0",
+  "name" : "test_1login[loginlist1]",
+  "fullName" : "test_suit.test_login.Test_login#test_1login",
+  "historyId" : "14e760be4f06a7b0d6c9df820cba28cb",
+  "time" : {
+    "start" : 1640847999936,
+    "stop" : 1640847999936,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: setup_class() missing 1 required positional argument: 'init_driver'",
+  "statusTrace" : "cls = <class '_pytest.runner.CallInfo'>\nfunc = <function call_runtest_hook.<locals>.<lambda> at 0x03FF87C8>\nwhen = 'setup'\nreraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)\n\n    @classmethod\n    def from_call(\n        cls,\n        func: \"Callable[[], TResult]\",\n        when: \"Literal['collect', 'setup', 'call', 'teardown']\",\n        reraise: Optional[\n            Union[Type[BaseException], Tuple[Type[BaseException], ...]]\n        ] = None,\n    ) -> \"CallInfo[TResult]\":\n        \"\"\"Call func, wrapping the result in a CallInfo.\n    \n        :param func:\n            The function to call. Called without arguments.\n        :param when:\n            The phase in which the function is called.\n        :param reraise:\n            Exception or exceptions that shall propagate if raised by the\n            function, instead of being wrapped in the CallInfo.\n        \"\"\"\n        excinfo = None\n        start = timing.time()\n        precise_start = timing.perf_counter()\n        try:\n>           result: Optional[TResult] = func()\n\nE:\\python37\\lib\\site-packages\\_pytest\\runner.py:340: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nE:\\python37\\lib\\site-packages\\_pytest\\runner.py:261: in <lambda>\n    lambda: ihook(item=item, **kwds), when=when, reraise=reraise\nE:\\python37\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nE:\\python37\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nE:\\python37\\lib\\site-packages\\pluggy\\manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\nE:\\python37\\lib\\site-packages\\_pytest\\runner.py:156: in pytest_runtest_setup\n    item.session._setupstate.setup(item)\nE:\\python37\\lib\\site-packages\\_pytest\\runner.py:501: in setup\n    raise exc\nE:\\python37\\lib\\site-packages\\_pytest\\runner.py:498: in setup\n    col.setup()\nE:\\python37\\lib\\site-packages\\_pytest\\python.py:1714: in setup\n    self._request._fillfixtures()\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:578: in _fillfixtures\n    item.funcargs[argname] = self.getfixturevalue(argname)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:591: in getfixturevalue\n    fixturedef = self._get_active_fixturedef(argname)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:610: in _get_active_fixturedef\n    self._compute_fixture_value(fixturedef)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:693: in _compute_fixture_value\n    fixturedef.execute(request=subrequest)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:1058: in execute\n    raise val.with_traceback(tb)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:1122: in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\nE:\\python37\\lib\\site-packages\\_pytest\\fixtures.py:917: in call_fixture_func\n    fixture_result = next(generator)\nE:\\python37\\lib\\site-packages\\_pytest\\python.py:829: in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nfunc = <function Test_login.setup_class at 0x04073348>\narg = <class 'test_suit.test_login.Test_login'>\n\n    def _call_with_optional_argument(func, arg) -> None:\n        \"\"\"Call the given function with the given argument if func accepts one argument, otherwise\n        calls func without arguments.\"\"\"\n        arg_count = func.__code__.co_argcount\n        if inspect.ismethod(func):\n            arg_count -= 1\n        if arg_count:\n>           func(arg)\nE           TypeError: setup_class() missing 1 required positional argument: 'init_driver'\n\nE:\\python37\\lib\\site-packages\\_pytest\\python.py:751: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_Test_login",
+    "time" : {
+      "start" : 1640847999603,
+      "stop" : 1640847999603,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "TypeError: setup_class() missing 1 required positional argument: 'init_driver'\n",
+    "statusTrace" : "  File \"E:\\python37\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"E:\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 1122, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"E:\\python37\\lib\\site-packages\\_pytest\\fixtures.py\", line 917, in call_fixture_func\n    fixture_result = next(generator)\n  File \"E:\\python37\\lib\\site-packages\\_pytest\\python.py\", line 829, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"E:\\python37\\lib\\site-packages\\_pytest\\python.py\", line 751, in _call_with_optional_argument\n    func(arg)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  }, {
+    "name" : "init_driver",
+    "time" : {
+      "start" : 1640847998060,
+      "stop" : 1640847999602,
+      "duration" : 1542
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录"
+  }, {
+    "name" : "feature",
+    "value" : "电商项目Web自动化测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_suit"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "ENG-469-A"
+  }, {
+    "name" : "thread",
+    "value" : "2832-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_suit.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "loginlist",
+    "value" : "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54402278c2cf45d0.json",
+  "parameterValues" : [ "{'title': '登录成功', 'description': '登录成功数据，用来测试用户名密码正确', 'username': 'xuzhu666', 'password': 123456}" ]
+}

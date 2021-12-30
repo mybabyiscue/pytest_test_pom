@@ -24,11 +24,10 @@ class Test_login:
     def setup_class(cls):
         cls.driver = webdriver.Chrome()
         cls.driver.maximize_window()
-        cls.lp = Login_page(cls.driver)
         # cls.web = Base_object()
-        # cls.driver1 = cls.web.openbrowser()
-        # cls.lp = Login_page(cls.driver1)
-
+        # cls.web.openbrowser()
+        cls.lp = Login_page(cls.driver)
+        pass
     @classmethod
     def teardown_class(cls):
         # cls.web = Base_object()
@@ -45,14 +44,11 @@ class Test_login:
     def test_2search(self):
         allure.dynamic.title("正确查询")
         allure.description("这是一个正确的查询")
-        try:
-            self.lp.login_test2('手机')
-            assert 1==2
-        except:
-            pytest.fail('用例执行失败')
-        finally:
-            allure.attach(self.driver.get_screenshot_as_png(),'运行结果截图',allure.attachment_type.PNG)
+        # try:
+        self.Login_page().login_test2('手机')
+        # except:
+        #     pytest.fail('用例执行失败')
+        # finally:
+        #     allure.attach(self.driver.get_screenshot_as_png(),'运行结果截图',allure.attachment_type.PNG)
 
 
-if __name__ == '__main__':
-    pytest.main('-sv')

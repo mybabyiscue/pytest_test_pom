@@ -15,7 +15,7 @@ class Base_object:
 
     def __init__(self,driver):
         self.driver = driver
-
+        # self.driver = None
 
     def openbrowser(self,br='gc'):
         """
@@ -25,6 +25,7 @@ class Base_object:
         """
         if br == 'gc':
             self.driver = webdriver.Chrome()
+            return self.driver
         elif br == 'ff':
             self.driver = webdriver.Firefox()
         elif br == 'ie':

@@ -35,12 +35,8 @@ class Login_page(Base_object):
         self.sleep(3)
 
     def login_test2(self,text):
-        # with allure.step('打开浏览器'):
-        #     self.open()
         with allure.step('填写内容进行搜索'):
             self.input_(self.search_text,text)
-        # with allure.step('填写密码'):
-        #     self.input_(self.password,)
         with allure.step('点击查询'):
             self.click(self.search_click)
         self.sleep(3)
